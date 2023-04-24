@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root {
+    --primary-color: rgb(96, 108, 56);
+    --primary-color-hover: #ce1212c1;
+    --primary-bgcolor: rgb(40, 54, 24);
+    --primary-ftcolor: rgb(254, 250, 224);
+    --primary-wecolor: rgb(221, 161, 94);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-bgcolor);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1320px;
+}
+
+.headerOuterWrapper {
+    background: var(--primary-color);
+    /* position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0; */
+}
+
+.headerInnerWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    padding: 12px 0;
+    text-align: end;
+    color: var(--primary-bgcolor);
+}
+
+.title a {
+    text-decoration: none;
+    color: var(--primary-bgcolor);
+}
+
+.fa-brands {
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid,
+.fas {
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.8em;
+    color: var(--primary-bgcolor);
+}
+
+.blank {
+    padding: 12px;
+    background-color: red;
+}
+
+.homeInnerWrapper {
+    padding-top: 145px;
+    padding-bottom: 135px;
+}
+
+.homeOuterWrapper .homeInnerWrapper {
+    display: flex;
+}
+
+.homeOuterWrapper .homeInnerWrapper .homeInfo {
+    color: #DDA15E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeOuterWrapper .homeInnerWrapper .homeInfo .homeTitle,
+.homeTitle2 {
+    font-family: 'Itim', cursive;
+}
+
+.homeOuterWrapper .homeInnerWrapper .homeInfo .homeTitle {
+    font-size: 78px;
+}
+
+.homeOuterWrapper .homeInnerWrapper .homeInfo .homeTitle2 {
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 10px;
+
+}
+
+.homeOuterWrapper .homeInnerWrapper .homeInfo .homeTitleInfo {
+    font-size: 25px;
+    line-height: calc(30 / 25);
+}
+
+.loginPro {
+    display: flex;
+    justify-content: center;
+    margin: 21px;
+    padding-bottom: 20px;
+}
+
+.LgButton {
+    background: var(--primary-wecolor);
+    color: var(--primary-bgcolor);
+    width: fit-content;
+    font-weight: 900;
+    padding: 15px 30px 15px 30px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease-in-out 0.8s;
+}
+
+.LgButton:hover {
+    /* background: var(--primary-color);
+    color: var(--primary-wecolor); */
+    box-shadow: inset 0px 0px 20px 0px #283618;
+    transition: ease-in-out 0.4s;
+}
+
+.lpImg {
+    width: 602px;
+    background-color: transparent;
+}
+
+img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 90%);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.overlay a {
+    padding: 20px;
+    text-decoration: none;
+    text-align: start;
+    font-size: 30px;
+    color: var(--primary-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: var(--primary-wecolor);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -25px;
+    right: 16px;
+    font-size: 60px;
+}
+
+.signUpOuterWrapper{
+    /* background-image: url("image\cm.jpg") !important; */
+}
+.signUpInnerWrapper {
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* border: 2px solid var(--primary-wecolor); */
+    box-shadow: 0px 0px 28px 11px rgb(46 103 54 / 25%);
+    border-radius: 10px;
+    background-color: #283618;
+    /* background-image: url("C:\Users\basni\Desktop\web advance development\weeb community\image\cm5.jpg") !important; */
+}
+
+.content {
+
+    margin: 0 auto;
+    width: fit-content;
+    
+
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 442px;
+}
+
+.SignUP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 0px 0px; */
+    width: 76%;
+}
+
+.signUpTitle {
+    padding: 43px 0px 33px 0;
+}
+
+.sUTitle {
+    text-transform: uppercase;
+    padding-top: 43px;
+    text-align: center;
+    color: #DDA15E;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.sUSubTitle {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(170, 157, 157);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.signUpcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.birthAge,
+.gender {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.basicDetail {
+
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.BD {
+    background-color: white;
+    color: black;
+    border: 1px solid #c4d3ff;
+    border-radius: 4%;
+    position: relative;
+    width: inherit;
+    font-size: 17px;
+    max-height: 216px;
+    padding: 10px 5px 10px 61px;
+    border-radius: 5px;
+}
+
+#SUIcon::before {
+    position: absolute;
+    left: 4px;
+    color: #79888E;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+.birthAge p ,.gender h5 {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #E9EDC9;
+}
+
+.month,
+.date,
+.year {
+    padding: 10px 0px;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.muliOp{
+    font-size: 16px;
+    color: grey;
+    padding: 7px 25px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.muliOp:hover{
+    border: 1px solid #DDA15E;
+}
+.muliOp:focus{
+    color: black;
+    border: 1px solid #DDA15E;
+}
+
+.gender {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    
+}
+
+
+
+.genPro {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 21px;
+}
+
+.SUradio {
+    padding: 15px 0px;
+    font-size: 18px;
+    color: #E9EDC9;
+}
+
+.signUpImage {
+    width: fit-content;
+    padding-top: 80px;
+}
+
+#SUIcon {
+    position: absolute;
+    left: 13px;
+}
