@@ -194,11 +194,11 @@ img {
     font-size: 60px;
 }
 
-.signUpOuterWrapper{
-    /* background-image: url("image\cm.jpg") !important; */
-}
+/* .signUpOuterWrapper{
+    background-image: url("image\cm.jpg") !important; 
+} */
 .signUpInnerWrapper {
-    margin-top: 8%;
+    margin-top: 20%;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
